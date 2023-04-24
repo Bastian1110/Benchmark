@@ -12,10 +12,9 @@ using json = nlohmann::json;
 
 
 //Funcion que convierte un objeto carro en un string usado para describir el carro.
-std::string jsontoString(json data){
+std::string jsontoString(json data, std::unordered_map<std::string,std::string>& check){
     //Inicializa variables necesarias para trabajar el string. El mapa es para guardar cambios a la llaves y que no se tengan
     //realizar mas de una vez.
-    std::unordered_map<std::string,std::string> check;
     std::string str;
     std::string masterString;
 
@@ -75,8 +74,9 @@ int main(){
 
     //std::cout <<data[0]["marca"]<< '\n';
     std::vector<std::string> v1;
+    std::unordered_map<std::string,std::string> check;
     for(auto& el : data.items()){
-        std::string master = jsontoString(el.value());
+        std::string master = jsontoString(el.value(),check);
         //std::cout<<master<<"\n";
         v1.push_back(master);
     }
