@@ -36,7 +36,6 @@ start = time.time_ns()
 database = readDatabase("fakedata.json")
 sentences = []
 for car in database:
-    print(make_sentence(car))
     sentences.append(make_sentence(car))
 end = time.time_ns()
 print(f"Nanoseconds taken : {end - start}")
