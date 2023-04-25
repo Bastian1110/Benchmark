@@ -1,0 +1,112 @@
+[
+    {
+        "_id": 1,
+        "marca": "Mercedes-Benz",
+        "modelo": "GLA",
+        "precio": 284647,
+        "color": "negro",
+        "transmision": "manual",
+        "año": 2021,
+        "piloto_automatico": true,
+        "caballos_de_fuerza": 112
+    },
+    {
+        "_id": 2,
+        "marca": "Chevrolet",
+        "modelo": "Camaro",
+        "precio": 831752,
+        "color": "verde",
+        "transmision": "manual",
+        "año": 2020,
+        "tamaño_llantas": "grande",
+        "sonido": "premium"
+    },
+    {
+        "_id": 3,
+        "marca": "Ford",
+        "modelo": "F-150",
+        "precio": 378121,
+        "color": "negro",
+        "transmision": "manual",
+        "año": 2020,
+        "puertas": 4,
+        "motor": 4
+    },
+    {
+        "_id": 4,
+        "marca": "Nissan",
+        "modelo": "Pathfinder",
+        "precio": 309552,
+        "color": "negro",
+        "transmision": "manual",
+        "año": 2020,
+        "quemacocos": false,
+        "eficicencia": 13
+    },
+    {
+        "_id": 5,
+        "marca": "Toyota",
+        "modelo": "RAV4",
+        "precio": 562961,
+        "color": "verde",
+        "transmision": "manual",
+        "año": 2020,
+        "asientos": 4,
+        "combustible": "hibrido"
+    },
+    {
+        "_id": 6,
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "precio": 846691,
+        "color": "blanco",
+        "transmision": "automatico",
+        "año": 2024,
+        "puertas": 2,
+        "motor": 2
+    },
+    {
+        "_id": 7,
+        "marca": "Toyota",
+        "modelo": "RAV4",
+        "precio": 251750,
+        "color": "rojo",
+        "transmision": "manual",
+        "año": 2021,
+        "asientos": 5,
+        "combustible": "electrico"
+    },
+    {
+        "_id": 8,
+        "marca": "Tesla",
+        "modelo": "Model X",
+        "precio": 591118,
+        "color": "azul",
+        "transmision": "estandar",
+        "año": 2022,
+        "rango": 222,
+        "piloto_automatico": false
+    },
+    {
+        "_id": 9,
+        "marca": "Toyota",
+        "modelo": "RAV4",
+        "precio": 429338,
+        "color": "blanco",
+        "transmision": "manual",
+        "año": 2023,
+        "asientos": 2,
+        "combustible": "hibrido"
+    },
+    {
+        "_id": 10,
+        "marca": "Tesla",
+        "modelo": "Model X",
+        "precio": 971295,
+        "color": "blanco",
+        "transmision": "automatico",
+        "año": 2024,
+        "rango": 106,
+        "piloto_automatico": false
+    }
+]

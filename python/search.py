@@ -15,21 +15,29 @@ def readDatabase(file_path):
             )
 
 
-def carParser(car):
-    words = []
-    for key in car:
-        if not isinstance(car[key], str):
-            words.append((key + " " + str(car[key])).lower())
-            continue
-        words.append(car[key].lower())
-    return " ".join(words[1:])
+def make_sentence(car):
+    values = []
+    for key, value in car.items():
+        if isinstance(value, str):
+            values.append(value.lower())
+        elif isinstance(value, bool) and value:
+            key = key.lower().replace("_", " ")
+            values.append(key)
+        elif isinstance(value, (int, float)):
+            key = key.lower().replace("_", " ")
+            values.append(f"{key} {value}")
+    if len(values) >= 2:
+        return " ".join(values)
+    else:
+        return "Could not generate sentence: missing make or model info"
 
 
 start = time.time_ns()
 database = readDatabase("fakedata.json")
 sentences = []
 for car in database:
-    sentences.append(carParser(car))
+    print(make_sentence(car))
+    sentences.append(make_sentence(car))
 end = time.time_ns()
 print(f"Nanoseconds taken : {end - start}")
 print(f" {len(sentences)} Cars")
